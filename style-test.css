@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background:  #150b5c;
+}
+
+.header__board {
+    opacity: 0;
+}
+
+.header {
+    min-height: 40vh;
+    text-align: center;
+    padding: 5rem;
+    border-bottom: .7rem solid rgba(0, 0, 0, 0.589);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__title {
+    font-size: 8rem;
+    font-weight: 400;
+    letter-spacing: 1.7;
+    color: rgba(0, 0, 0, 0.815);
+}
+
+p {
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.795);
+    font-weight: 600;
+}
+
+.header__score {
+    font-size: 4rem;
+    margin: 0 1rem;
+    color: cyan;
+}
+
+section {
+    margin: 0 4rem;
+    padding: 3rem;
+}
+
+.answer {
+    margin: 1rem 4rem;
+    font-size: 2rem;
+}
+
+.q {
+    color: rgba(77, 77, 77, 0.774);
+    font-size: 3.4rem;
+    margin: 2rem .2rem 2rem .2rem;
+    display: inline-block;
+    color: rgb(6, 207, 207);
+}
+
+.quistion {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 4rem;
+    padding: 5rem;
+    border-radius: 10px;
+}
+
+label {
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 1.5rem;
+}
+
+.btn {
+    border: 0;
+    display: inline-block;
+    border-radius: 100px;
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+    color: rgb(95, 250, 250);
+    letter-spacing: 1.4;
+    background-color: transparent;
+    border: 1px solid rgb(95, 255, 255);
+    transition: all .5s;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+.submit {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
