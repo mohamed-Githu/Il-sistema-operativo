@@ -17,18 +17,19 @@
             <img src="bars-solid.svg" class="navigation__icon">
         </label>
 
-        <div class="navigation__background">&nbsp;</div>
+        <div class="navigation__background"></div>
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link">Introduzione</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Definizione</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Architittura</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Introduzione</a></li>
+                <li class="navigation__item"><a href="#int" class="navigation__link">Introduzione</a></li>
+                <li class="navigation__item"><a href="#def" class="navigation__link">Definizione e importanza</a></li>
+                <li class="navigation__item"><a href="#arc" class="navigation__link">Architittura modulare</a></li>
+                <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="test.html" class="navigation__link">test</a></li>
             </ul>
         </nav>
     </div>
-    <header class="header">
+    <header class="header" id="int">
         <div class="text-center">
             <div class="heading-primary">Il sistema operativo</div>
             <div class="test">
@@ -39,7 +40,7 @@
     </header>
     <section class="intro">
         <div class="text-center__sub ma-bt">
-            <div class="heading-secondary">definizione e importanza</div>
+            <div class="heading-secondary" id="def">definizione e importanza</div>
         </div>
         <div class="row-2">
             <div class="col-2">
@@ -61,7 +62,7 @@
             </div>
         </div>
     </section>
-    <section class="archit">
+    <section class="archit" id="arc">
         <div class="text-center__sub">
             <div class="heading-secondary heading-secondary__sub">
                 l'architittura modulare del <strong>so</strong>
@@ -77,5 +78,47 @@
             </ul>
         </div>
     </section>
+    <section class="archit-2">
+        <div class="text-center__sub ma-bt">
+            <div class="header-tertiary header-tertiary--big">I monolitici :</div>
+            <div class="text-wrapper text-wrapper--big">Sono i sistemi operativi per i quali tutti i moduli sono eseguiti in modalità protetta</div>
+        </div>
+        <div class="text-center__sub ma-bt">
+            <div class="header-tertiary header-tertiary--big">Micro-kernel :</div>
+            <div class="text-wrapper text-wrapper--big">Sono i sistemi operativi in cui tutti i moduli, tranne i gestori del processore e della memoria, sono eseguiti in modalità utente.</div>
+        </div>
+        <div class="text-center__sub ma-bt">
+            <div class="header-tertiary header-tertiary--big">system call :</div>
+            <div class="text-wrapper text-wrapper--big">Trasferisce al sistema operativo la richiesta dell’operazione desiderata, e l’esecuzione del programma riprende solo dopo che il sistema operativo ha completato l’operazione richiesta.</div>
+        </div>
+        <div class="text-center__sub">
+            <div class="header-tertiary header-tertiary--big">Application program interface (API) :</div>
+            <div class="text-wrapper text-wrapper--big">E` un' interfaccia dell' S.O che assume la forma di una libreria di funzioni speciali.</div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="row-2">
+            <div class="col-2">
+                <div class="footer">
+                    <div class="header-tertiary cl-wh">don bosco cairo</div>
+                    <div class="header-tertiary cl-wh">classe : 3ti</div>
+                    <div class="header-tertiary cl-wh">anno scolastico : 2019/2020</div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="header-tertiary cl-wh">i membri del gruppo :</div>
+                <div class="text-wrapper cl-wh-light">
+                    <ul>
+                        <li>Mario Bassem - 14</li>
+                        <li>Mikhaeli Nabil - 15</li>
+                        <li>Mohamed Hussein - 17</li>
+                        <li>Moussa Gerges - 20</li>
+                        <li>Youssef Ramy - 24</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="checkbox.js"></script>
 </body>
 </html>

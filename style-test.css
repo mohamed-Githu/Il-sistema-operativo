@@ -5,12 +5,19 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 62.5%;
     box-sizing: border-box;
+    padding: 1.5rem;
 }
 
 body {
     position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.container {
     background:  #150b5c;
 }
 
@@ -19,18 +26,15 @@ body {
 }
 
 .header {
-    min-height: 40vh;
     text-align: center;
-    padding: 5rem;
-    border-bottom: .7rem solid rgba(0, 0, 0, 0.589);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .header__title {
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 400;
     letter-spacing: 1.7;
     color: rgba(0, 0, 0, 0.815);
