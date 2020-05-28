@@ -5,7 +5,9 @@
 
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icon-fonts.css">
 
     <title>Il sistema operativo | Come funziona e cosa serve?</title>
 </head>
@@ -30,6 +32,7 @@
         </nav>
     </div>
     <header class="header" id="int">
+        <div class="header__logo"><img src="icons3.png" alt="logo"></div>
         <div class="text-center">
             <div class="heading-primary">Il sistema operativo</div>
             <div class="test">
@@ -68,54 +71,74 @@
                 l'architittura modulare del <strong>so</strong>
             </div>
         </div>
-        <div class="text-wrapper text-wrapper__sub">
-            <ul>
-                <li>Gestione del processore e dei programmi in esecuzione.</li>
-                <li>Gestione della memoria e dei dati dei programmi in esecuzione.</li>
-                <li>Gestione dei file memorizzati sulle unita di memoria (HDD, SSD).</li>
-                <li>Gestione dei dispositivi di input e di output.</li>
-                <li>Gestione della comunicaczione e della rete.</li>
-            </ul>
-        </div>
+        <div class="row-5">
+            <div class="col-5">
+                <div class="feature-box">
+                    <i class="icon-basic-webpage-multiple feature-box__icon"></i>
+                    <h3 class="header-tertiary feature__header">processore</h3>
+                    <p class="feature-box__text">Il sistema operativo gestisce il processore ed i programmi in esecuzione</p>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="feature-box">
+                    <i class="icon-basic-server2 feature-box__icon"></i>
+                    <h3 class="header-tertiary feature__header">memoria</h3>
+                    <p class="feature-box__text">Il sistema operativo gestisce la memoria e dei dati dei programmi in esecuzione</p>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="feature-box">
+                    <i class="icon-basic-folder-multiple feature-box__icon"></i>
+                    <h3 class="header-tertiary feature__header">file e dati</h3>
+                    <p class="feature-box__text">Il sistema operativo gestisce i file memorizzati sulle unità di memoria</p>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="feature-box">
+                    <i class="icon-basic-usb feature-box__icon"></i>
+                    <h3 class="header-tertiary feature__header">in/output</h3>
+                    <p class="feature-box__text">Il sistema operativo gestisce addirittura i dispositivi di input e di output</p>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="feature-box">
+                    <i class="icon-basic-rss feature-box__icon"></i>
+                    <h3 class="header-tertiary feature__header">le reti</h3>
+                    <p class="feature-box__text">Il sistema operativo assume il ruolo di gestire la comunicaczione e la rete</p>
+                </div>
+            </div>
     </section>
     <section class="archit-2">
-        <div class="text-center__sub ma-bt">
-            <div class="header-tertiary header-tertiary--big">I monolitici :</div>
-            <div class="text-wrapper text-wrapper--big">Sono i sistemi operativi per i quali tutti i moduli sono eseguiti in modalità protetta</div>
+        <div class="ma-bt">
+            <div class="header-tertiary">I monolitici :</div>
+            <div class="text-wrapper t">Sono i sistemi operativi per i quali tutti i moduli sono eseguiti in modalità protetta</div>
         </div>
-        <div class="text-center__sub ma-bt">
-            <div class="header-tertiary header-tertiary--big">Micro-kernel :</div>
-            <div class="text-wrapper text-wrapper--big">Sono i sistemi operativi in cui tutti i moduli, tranne i gestori del processore e della memoria, sono eseguiti in modalità utente.</div>
+        <div class="ma-bt">
+            <div class="header-tertiary">Micro-kernel :</div>
+            <div class="text-wrapper">Sono i sistemi operativi in cui tutti i moduli, tranne i gestori del processore e della memoria, sono eseguiti in modalità utente.</div>
         </div>
-        <div class="text-center__sub ma-bt">
-            <div class="header-tertiary header-tertiary--big">system call :</div>
-            <div class="text-wrapper text-wrapper--big">Trasferisce al sistema operativo la richiesta dell’operazione desiderata, e l’esecuzione del programma riprende solo dopo che il sistema operativo ha completato l’operazione richiesta.</div>
+        <div class="ma-bt">
+            <div class="header-tertiary">system call :</div>
+            <div class="text-wrapper">Trasferisce al sistema operativo la richiesta dell’operazione desiderata, e l’esecuzione del programma riprende solo dopo che il sistema operativo ha completato l’operazione richiesta.</div>
         </div>
-        <div class="text-center__sub">
-            <div class="header-tertiary header-tertiary--big">Application program interface (API) :</div>
-            <div class="text-wrapper text-wrapper--big">E` un' interfaccia dell' S.O che assume la forma di una libreria di funzioni speciali.</div>
+        <div>
+            <div class="header-tertiary">Application program interface (API) :</div>
+            <div class="text-wrapper">E` un' interfaccia dell' S.O che assume la forma di una libreria di funzioni speciali.</div>
         </div>
     </section>
     <section class="about" id="about">
-        <div class="row-2">
-            <div class="col-2">
-                <div class="footer">
-                    <div class="header-tertiary cl-wh">don bosco cairo</div>
-                    <div class="header-tertiary cl-wh">classe : 3ti</div>
-                    <div class="header-tertiary cl-wh">anno scolastico : 2019/2020</div>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="header-tertiary cl-wh">i membri del gruppo :</div>
-                <div class="text-wrapper cl-wh-light">
-                    <ul>
-                        <li>Mario Bassem - 14</li>
-                        <li>Mikhaeli Nabil - 15</li>
-                        <li>Mohamed Hussein - 17</li>
-                        <li>Moussa Gerges - 20</li>
-                        <li>Youssef Ramy - 24</li>
-                    </ul>
-                </div>
+        <div class="about-wrapper">
+            <p class="heading-secondary about-wrapper__header">classe 3ti - 2019/2020</p>
+            <p class="heading-secondary about-wrapper__header">don bosco cairo</p>
+            <div class="header-tertiary">Noi siamo :</div>
+            <div class="text-wrapper">
+                <ul>
+                    <li>Mario Bassem - 14</li>
+                    <li>Mikhaeli Nabil - 15</li>
+                    <li>Mohamed Hussein - 17</li>
+                    <li>Moussa Gerges - 20</li>
+                    <li>Youssef Ramy - 24</li>
+                </ul>
             </div>
         </div>
     </section>
