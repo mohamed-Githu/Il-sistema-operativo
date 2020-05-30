@@ -40,7 +40,7 @@ body {
     position: fixed;
     right: 6.5rem;
     top: 6.5rem;
-    background: radial-gradient( #150b5c, #342d69);
+    background: radial-gradient( #150b5c, #5348a7);
     z-index: 1000;
 
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -107,7 +107,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(to right bottom, #150b5c, #342d69);
+    background: linear-gradient(to right bottom, #150b5c, #5348a7);
     background-size: cover;
     background-position: top;
     height: 95vh;
@@ -200,8 +200,8 @@ ma-auto {
 .archit {
     position: relative;
     transform: skewY(-7deg);
-    background: linear-gradient(to right bottom, #150b5c, #342d69);
-    padding: 10rem 3rem;
+    background: linear-gradient(to right bottom, #150b5c, #5348a7);
+    padding: 15rem 3rem;
     z-index: 500;
     margin-bottom: -20vh;
 }
@@ -212,12 +212,7 @@ ma-auto {
 
 .archit-2 {
     padding: 25rem 20rem 8rem 20rem;
-    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8))
-        , url(il\ sistema\ operativo.jpeg);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    z-index: 200;
+    background: #ccc;
 }
 
 .feature-box {
@@ -240,7 +235,7 @@ ma-auto {
     margin-top: 1rem;
     display: inline-block;
     color: transparent;
-    background: linear-gradient(to right bottom, #150b5c, #342d69);
+    background: linear-gradient(to right bottom, #150b5c, #5348a7);
     -webkit-background-clip: text;
     background-clip: text;
 }
@@ -251,6 +246,85 @@ ma-auto {
     margin: 3rem 0 2rem 0;
 }
 
+.esempi {
+    padding: 15rem 0;
+    background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8))
+        , url(il\ sistema\ operativo.jpeg);
+    background-size: contain;
+    background-position: top;
+}
+
+.esempi__box {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: skewX(-12deg);
+}
+
+.esempi__box:not(:last-child) {
+    margin-bottom: 10rem;
+    margin-top: 8rem;
+}
+
+.esempi__box > * {
+    transform: skewX(12deg);
+}
+
+.esempi__figure {
+    height: 16rem;
+    width: 16rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    position: relative;
+}
+
+.esempi__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,20%);
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.esempi__image {
+    height: 100%;
+    transform: scale(1.4);
+    transition: all .5s;
+}
+
+.esempi__box:hover .esempi__caption {
+    opacity: 1;
+    transform: translate(-50%,-45%);
+}
+
+.esempi__box:hover .esempi__image {
+    transform: scale(1);
+    filter: blur(3px) brightness(80%);
+}
+
+.esempi__box .header-tertiary {
+    transform: translateX(-1.5rem) skewX(12deg);
+}
+
+.about {
+    padding: 6rem 0 12rem 0;
+    background: linear-gradient(to right bottom, #150b5c, #5348a7);
+}
+
 .about-box {
     width: 75%;
     margin: 0 auto;
@@ -258,11 +332,6 @@ ma-auto {
     background-color: #fff;
     border-radius: 3px;
     padding: 6rem;
-}
-
-.about {
-    padding: 6rem 0 12rem 0;
-    background: linear-gradient(to right bottom, #150b5c, #342d69);
 }
 
 .about__header {
@@ -309,6 +378,10 @@ ma-auto {
     color: rgba(255, 255, 255, 0.815);
 }
 
+.archit .heading-secondary__sub {
+    margin-bottom: 8rem;
+}
+
 .header-tertiary {
     font-size: 2rem;
     text-transform: uppercase;
@@ -321,15 +394,6 @@ ma-auto {
     font-size: 1.5rem;
     color: #888;
     margin-top: 1rem;
-}
-
-.archit-2 .text-wrapper {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.archit-2 .header-tertiary {
-    font-weight: 900;
-    color: #eee;
 }
 
 .text-wrapper__sub {
