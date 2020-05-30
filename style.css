@@ -213,7 +213,7 @@ ma-auto {
 .archit-2 {
     padding: 25rem 20rem 8rem 20rem;
     background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8))
-        , url(windows.jpg);
+        , url(il\ sistema\ operativo.jpeg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -228,6 +228,7 @@ ma-auto {
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     transition: transform .3s;
+    cursor: pointer;
 }
 
 .feature-box:hover {
@@ -260,8 +261,12 @@ ma-auto {
 }
 
 .about {
-    padding: 15rem 0;
+    padding: 6rem 0 12rem 0;
     background: linear-gradient(to right bottom, #150b5c, #342d69);
+}
+
+.about__header {
+    margin-bottom: 6rem;    
 }
 
 .about-wrapper {
