@@ -18,20 +18,25 @@ body {
     color: #8a8a8a;
 }
 
-@media(max-width: 75em) {
+::selection {
+    background-color: #150b5c;
+    color: white;
+}
+
+@media only screen and (max-width: 75em) {
     html { font-size: 56.25%; }
 }
 
-@media(max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
     html { font-size: 50%; }
     body { padding: 0; }
 }
 
-@media(max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
     html { font-size: 50%; }
 }
 
-@media(min-width: 112.5em) {
+@media only screen and (min-width: 112.5em) {
     html { font-size: 75%; }
 }
 
@@ -66,7 +71,7 @@ body {
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-@media(max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
 
     .navigation__background {
         right: 3rem;
@@ -176,7 +181,7 @@ body {
     color: #150b5c;
 }
 
-@media(max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
     .navigation__link:link,
     .navigation__link:visited {
         font-size: 2rem;
@@ -212,7 +217,7 @@ body {
     }
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
     .header {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -261,7 +266,7 @@ ma-auto {
     margin-top: 3rem;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
     .heading-primary {
         font-size: 4rem;
         letter-spacing: .4rem;
@@ -277,7 +282,7 @@ ma-auto {
     margin: 8rem 0 2rem 0;
 }
 
-@media(max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
     .test--text {
         font-size: 1.7rem;
     }
@@ -333,7 +338,7 @@ ma-auto {
     margin-bottom: -40vh;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
     .intro {
         padding: 20rem 4rem;
     }
@@ -471,14 +476,14 @@ ma-auto {
     transform: translateX(-1.5rem) skewX(12deg);
 }
 
-@media (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
     .esempi__box {
         padding: 4rem;
         padding-left: 7rem;
     }
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
     .esempi__box {
         transform: skewX(0);
     }
@@ -493,7 +498,7 @@ ma-auto {
     }
 }
 
-@media (max-width: 26.5em) {
+@media only screen and (max-width: 26.5em) {
     .esempi__figure {
         float: none;
         margin: 0 auto;
@@ -536,7 +541,7 @@ ma-auto {
     justify-content: space-between;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
     .about-wrapper {
         width: 90%;
         background:  linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%,
@@ -547,7 +552,7 @@ ma-auto {
     }
 }
 
-@media (max-width: 31.25em) {
+@media only screen and (max-width: 31.25em) {
     .about-wrapper {
         background:  linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%,
         rgba(255, 255, 255, 0.8) 75%, transparent 75%) ,url(donbosco.jpg);
@@ -570,13 +575,13 @@ ma-auto {
     font-size: 2.7rem !important;
 }
 
-@media (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
     .about-wrapper__header {
         font-size: 1.8rem !important;
     }
 }
 
-@media (max-width: 31.25em) {
+@media only screen and (max-width: 31.25em) {
     .about-wrapper__header {
         font-size: 1.5rem !important;
     }
@@ -597,13 +602,13 @@ ma-auto {
     background-clip: text;
 }
 
-@media(max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
     .heading-secondary {
         font-size: 3rem;
     }
 }
 
-@media(max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
     .heading-secondary {
         font-size: 2.5rem;
     }
@@ -664,7 +669,7 @@ ma-auto {
     width: 45%;
 }
 
-@media(max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
     .row-5 {
         flex-direction: column;
     }
